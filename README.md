@@ -1,2 +1,2 @@
 # OSXInstall
-Script to set up new OSX machine
+Script to set up a new OSX machine
