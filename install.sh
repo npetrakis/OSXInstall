@@ -29,6 +29,7 @@ echo "Brew Packages"
 brew install mas
 brew install mackup
 brew install git
+brew install git-flow
 
 echo "Cask Packages"
 brew cask install appcleaner
