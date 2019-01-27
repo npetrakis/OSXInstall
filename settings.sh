@@ -190,6 +190,12 @@ defaults write com.apple.dock minimize-to-application -bool true
 # Show indicators for open applications
 defaults write com.apple.dock show-process-indicators -bool true
 
+# Add Applications Folder
+defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>displayas</key><integer>1</integer><key>file-data</key><dict><key>_CFURLString</key><string>file:///Applications/</string><key>_CFURLStringType</key><integer>15</integer></dict><key>file-label</key><string>Applications</string><key>file-type</key><integer>2</integer><key>showas</key><integer>0</integer></dict><key>tile-type</key><string>directory-tile</string></dict>"
+
+# Add Downloads Folder
+defaults write com.apple.dock persistent-others -array-add "<dict><key>tile-data</key><dict><key>displayas</key><integer>1</integer><key>file-data</key><dict><key>_CFURLString</key><string>file:///Users/nico/Downloads/</string><key>_CFURLStringType</key><integer>15</integer></dict><key>file-label</key><string>Downloads</string><key>file-type</key><integer>2</integer><key>showas</key><integer>1</integer></dict><key>tile-type</key><string>directory-tile</string></dict>"
+
 # # # # # # # # # # # # # # MAC APP STORE # # # # # # # # # # # # # # # # # # #
 
 # Enable the WebKit Developer Tools in the Mac App Store
