@@ -28,9 +28,12 @@ brew update
 echo "Brew Packages"
 brew install mas
 brew install mackup
+
 brew install git
 brew install git-flow
 brew install maven
+brew install node
+brew install yarn
 
 echo "Cask Packages"
 brew cask install appcleaner
@@ -39,15 +42,21 @@ brew cask install bettertouchtool
 brew cask install dropbox
 brew cask install evernote
 brew cask install google-chrome
-brew cask install iterm2
 brew cask install spotify
-brew cask install sublime-text
-brew cask install pycharm-ce
-brew cask install visual-studio-code
-brew cask install docker
-brew cask install sourcetree
 brew cask install qlmarkdown
 brew cask install qlstephen
+
+brew cask install iterm2
+brew cask install miniconda
+brew cask install sublime-text
+brew cask install pycharm-ce
+brew cask install sourcetree
+brew cask install intellij-idea-ce
+brew cask install visual-studio-code
+brew cask install docker
+
+echo "Angular"
+npm install -g @angular/cli
 
 echo "Cleaning up brew"
 brew cleanup
