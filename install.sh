@@ -30,6 +30,7 @@ brew install mas
 brew install mackup
 brew install git
 brew install git-flow
+brew install maven
 
 echo "Cask Packages"
 brew cask install appcleaner
