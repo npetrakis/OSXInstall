@@ -43,6 +43,7 @@ brew cask install spotify
 brew cask install sublime-text
 brew cask install pycharm-ce
 brew cask install visual-studio-code
+brew cask install docker
 brew cask install sourcetree
 brew cask install qlmarkdown
 brew cask install qlstephen
