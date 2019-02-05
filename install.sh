@@ -24,6 +24,10 @@ fi
 echo "Updating homebrew..."
 brew update
 
+
+brew tap caskroom/versions
+brew cask install java8
+
 # Brew Packages
 echo "Brew Packages"
 brew install mas
@@ -34,6 +38,7 @@ brew install git-flow
 brew install maven
 brew install node
 brew install yarn
+
 
 echo "Cask Packages"
 brew cask install appcleaner
