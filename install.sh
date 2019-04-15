@@ -34,10 +34,10 @@ brew install mas
 brew install mackup
 
 brew install git
-brew install git-flow
-brew install maven
-brew install node
-brew install yarn
+# brew install git-flow
+# brew install maven
+# brew install node
+# brew install yarn
 
 
 echo "Cask Packages"
@@ -57,11 +57,11 @@ brew cask install sublime-text
 brew cask install pycharm-ce
 brew cask install sourcetree
 brew cask install intellij-idea-ce
-brew cask install visual-studio-code
-brew cask install docker
+# brew cask install visual-studio-code
+# brew cask install docker
 
-echo "Angular"
-npm install -g @angular/cli
+# echo "Angular"
+# npm install -g @angular/cli
 
 echo "Cleaning up brew"
 brew cleanup
@@ -73,7 +73,7 @@ mas install 926036361 # LastPass
 mas install 949724400 # MoneyWiz 2
 mas install 803453959 # Slack
 mas install 425424353 # The Unarchiver
-#mas install 462062816 # Microsoft PowerPoint
+mas install 462062816 # Microsoft PowerPoint
 mas install 462058435 # Microsoft Excel
 mas install 1437501971 # eID Connector
 mas install 409201541 # Pages
