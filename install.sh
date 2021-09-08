@@ -26,7 +26,7 @@ brew update
 
 
 brew tap caskroom/versions
-brew cask install java8
+brew install java8
 
 # Brew Packages
 echo "Brew Packages"
@@ -34,50 +34,56 @@ brew install mas
 brew install mackup
 
 brew install git
-# brew install git-flow
-# brew install maven
-# brew install node
-# brew install yarn
+brew install git-flow
+brew install node
 
 
 echo "Cask Packages"
-brew cask install appcleaner
-brew cask install atext
-brew cask install bettertouchtool
-brew cask install dropbox
-brew cask install evernote
-brew cask install google-chrome
-brew cask install spotify
-brew cask install qlmarkdown
-brew cask install qlstephen
+brew install appcleaner
+brew install atext
+brew install bettertouchtool
+brew install dropbox
+brew install google-chrome
+brew install spotify
 
-brew cask install iterm2
-brew cask install miniconda
-brew cask install sublime-text
-brew cask install pycharm-ce
-brew cask install sourcetree
-brew cask install intellij-idea-ce
-# brew cask install visual-studio-code
-# brew cask install docker
+brew install iterm2
+brew install miniconda
+brew install sublime-text
+brew install pycharm
+brew install sourcetree
+brew install intellij-idea-ce
+brew install visual-studio-code
+brew install docker
+brew install microsoft-teams
+brew install tesseract
+brew install tesseract-lang
+brew install zsh
+brew install android-studio
+brew install azure-data-studio
+brew install google-drive-file-stream
+brew install microsoft-azure-storage-explorer
+brew install postman
+brew install virtualbox
+brew install virtualbox-extension-pack
 
 # echo "Angular"
-# npm install -g @angular/cli
+npm install -g @angular/cli
 
 echo "Cleaning up brew"
 brew cleanup
 
 echo "Mac App Store Apps"
-mas install 568494494 # Pocket
+mas install 1402042596 # Adblock
+mas install 1160374471 # Pipifier
 mas install 937984704 # Amphetamine
-mas install 926036361 # LastPass
-mas install 949724400 # MoneyWiz 2
 mas install 803453959 # Slack
 mas install 425424353 # The Unarchiver
 mas install 462062816 # Microsoft PowerPoint
 mas install 462058435 # Microsoft Excel
-mas install 1437501971 # eID Connector
+mas install 462054704 # Microsoft Word
+mas install 937984704 # Amphetamine
 mas install 409201541 # Pages
-
+mas install 585829637 # Todoist
 echo "Please setup and sync Dropbox, and then run this script again."
 read -p "Press [Enter] key after this..."
 

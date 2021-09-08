@@ -6,8 +6,6 @@ echo "Zsh"
 brew install zsh
 
 echo "Oh My Zsh"
-rm -rf ~/.oh-my-zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # These things are backuped because of mackup
 
@@ -18,14 +16,11 @@ git clone git://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-
 # install highlighting plugin
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-# Theme: https://github.com/bhilburn/powerlevel9k
-brew tap sambadevi/powerlevel9k
-brew install powerlevel9k
-echo "source /usr/local/opt/powerlevel9k/powerlevel9k.zsh-theme" >> ~/.zshrc
-
-# Fonts
-https://github.com/powerline/fonts/tree/master/SourceCodePro
-# Change them in iTerm
+# Powerlevel10k theme 
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+# TODO MANUAL
+# Set ZSH_THEME="powerlevel10k/powerlevel10k" in ~/.zshrc
 
 chsh -s /bin/zsh
 
+p10k configure
