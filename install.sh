@@ -10,11 +10,14 @@ mkdir Users/nico/Developer
 echo "Xcode Command Line Tools"
 xcode-select --install
 
+echo "Please install xcode command line tools"
+read -p "Press [Enter] key after this..."
+
 # Homebrew
 which -s brew
 if [[ $? != 0 ]] ; then
     echo "Installing Homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 else
     echo "Updating Homebrew"
     brew update
@@ -35,8 +38,13 @@ brew install mackup
 
 brew install git
 brew install git-flow
-brew install node
 
+# Zsh
+echo "Zsh"
+brew install zsh
+
+echo "Oh My Zsh" 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "Cask Packages"
 brew install appcleaner
@@ -73,17 +81,20 @@ echo "Cleaning up brew"
 brew cleanup
 
 echo "Mac App Store Apps"
+
 mas install 1402042596 # Adblock
 mas install 1160374471 # Pipifier
 mas install 937984704 # Amphetamine
+mas install 585829637 # Todoist
+mas install 1091189122 # Bear
 mas install 803453959 # Slack
 mas install 425424353 # The Unarchiver
 mas install 462062816 # Microsoft PowerPoint
 mas install 462058435 # Microsoft Excel
 mas install 462054704 # Microsoft Word
-mas install 937984704 # Amphetamine
 mas install 409201541 # Pages
 mas install 585829637 # Todoist
+
 echo "Please setup and sync Dropbox, and then run this script again."
 read -p "Press [Enter] key after this..."
 

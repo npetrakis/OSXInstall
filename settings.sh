@@ -173,9 +173,6 @@ defaults write com.apple.Safari InstallExtensionUpdatesAutomatically -bool true
 
 # # # # # # # # # # # # # # DOCK # # # # # # # # # # # # # # # # # # #
 
-# Change Dock Orientation
-defaults write com.apple.dock orientation -string "left"
-
 # Autohide dock
 defaults write com.apple.dock autohide -bool true
 

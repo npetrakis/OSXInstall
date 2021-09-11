@@ -1,12 +1,5 @@
 #!/usr/bin/env bash
 
-# Oh My Zsh
-
-echo "Zsh"
-brew install zsh
-
-echo "Oh My Zsh"
-
 # These things are backuped because of mackup
 
 # install autosuggestions plugin
